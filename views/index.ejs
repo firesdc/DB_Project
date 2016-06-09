@@ -1,0 +1,147 @@
+   <% include ./header %>
+        <!--/.row-->
+        <div class="col-lg-12">
+                <h1 class="page-header" style="font-weight:bold">場地查詢</h1>
+            </div>
+        <ul>
+            <div class='col-md-12'>
+                <li>
+                    <h4>   請點選租借之起迄日期：</h4>
+                </li>
+            </div>
+            </li>
+            <div class='col-md-3'>
+                <div class="form-group">
+                    <div class='input-group date' id='example1'>
+                        <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class='col-md-3'>
+                <div class="form-group">
+                    <div class='input-group date' id='example2'>
+                        <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class='col-md-12'>
+                <li>
+                    <h4>依星期:</h4></li>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">一
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">二
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">三
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">四
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">五
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">六
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">日
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class='col-md-12'>
+                <li>
+                    <h4>依容納量:</h4></li>
+            </div>
+            <div class='col-md-3'>
+                <div class="form-group">
+                    <input class="form-control" placeholder="請輸入估計參與人數">
+                </div>
+            </div>
+            <div class='col-md-12'>
+                <li>
+                    <h4>選擇特定場地</h4></li>
+            </div>
+            <div class='col-md-3'>
+                <div class="form-group">
+                    <select class="form-control">
+                        <option>全部查詢</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                    </select>
+                </div>
+            </div></ul>
+    <div class="col-md-12"></div>
+
+
+    <div style="margin:50px;" class="col-md-6"><a href="second.html"> <button type="submit" class="btn btn-primary">Submit Button</button></a></div>
+  
+
+
+
+
+    </div>
+    <!--/.main-->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/chart-data.js"></script>
+    <script src="js/easypiechart.js"></script>
+    <script src="js/easypiechart-data.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/bootstrap-table.js"></script>
+    <script>
+    ! function($) {
+        $(document).on("click", "ul.nav li.parent > a > span.icon", function() {
+            $(this).find('em:first').toggleClass("glyphicon-minus");
+        });
+        $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+    }(window.jQuery);
+
+    $(window).on('resize', function() {
+        if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+    })
+    $(window).on('resize', function() {
+        if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+    })
+    $(document).ready(function() {
+
+        $('#example1').datepicker({
+            format: "dd/mm/yyyy"
+        });
+
+    });
+    $(document).ready(function() {
+
+        $('#example2').datepicker({
+            format: "dd/mm/yyyy"
+        });
+
+    });
+    </script>
+</body>
+
+</html>
